@@ -1,1 +1,122 @@
-LyoqCiAqIOmaj+acuumVv+Wtl+espuS4sueUn+aIkOWZqCDigJTigJQg6Zu25L6d6LWWIE5vZGUuanMgSFRUUCDmnI3liqEKICoKICog5o+Q5L6b77yaCiAqICAgR0VUIC8gICAgICAgICAgICAgICAgICAtPiDliY3nq6/pobXpnaIgKGluZGV4Lmh0bWwpCiAqICAgR0VUIC9hcGkvcmFuZG9tICAgICAgICAtPiBKU09OIOaOpeWPowogKiAgICAgICAgP2xlbj02NCAgICAgICAgICAg5a2X56ym5Liy6ZW/5bqm77yI6buY6K6kIDY077yM5LiK6ZmQIDEsMDAwLDAwMO+8iQogKiAgICAgICAgJmNoYXJzZXQ9YmFzZTYyICAg5a2X56ym6ZuG77yaaGV4IHwgYmFzZTYyIHwgYmFzZTY0IHwgYWxudW0gfCDoh6rlrprkuYnlrZfnrKbkuLIKICogICAgICAgICZjb3VudD0xICAgICAgICAgIOeUn+aIkOadoeaVsO+8iOm7mOiupCAx77yM5LiK6ZmQIDEwMO+8iQogKgogKiDov5DooYzvvJpub2RlIHNlcnZlci5qcyAgIO+8iOm7mOiupOerr+WPoyAzMDAw77yM5Y+v55So546v5aKD5Y+Y6YePIFBPUlQg6KaG55uW77yJCiAqLwoKInVzZSBzdHJpY3QiOwoKY29uc3QgaHR0cCA9IHJlcXVpcmUoImh0dHAiKTsKY29uc3QgZnMgPSByZXF1aXJlKCJmcyIpOwpjb25zdCBwYXRoID0gcmVxdWlyZSgicGF0aCIpOwpjb25zdCBjcnlwdG8gPSByZXF1aXJlKCJjcnlwdG8iKTsKCmNvbnN0IFBPUlQgPSBwYXJzZUludChwcm9jZXNzLmVudi5QT1JUIHx8ICIzMDAwIiwgMTApOwpjb25zdCBNQVhfTEVOID0gMV8wMDBfMDAwOwpjb25zdCBNQVhfQ09VTlQgPSAxMDA7Cgpjb25zdCBDSEFSU0VUUyA9IHsKICBoZXg6ICAgICIwMTIzNDU2Nzg5YWJjZGVmIiwKICBiYXNlNjI6ICIwMTIzNDU2Nzg5QUJDREVGR0hJSktMTU5PUFFSU1RVVldYWVphYmNkZWZnaGlqa2xtbm9wcXJzdHV2d3h5eiIsCiAgYmFzZTY0OiAiQUJDREVGR0hJSktMTU5PUFFSU1RVVldYWVphYmNkZWZnaGlqa2xtbm9wcXJzdHV2d3h5ejAxMjM0NTY3ODkrLyIsCiAgYWxudW06ICAiMDEyMzQ1Njc4OWFiY2RlZmdoaWprbG1ub3BxcnN0dXZ3eHl6QUJDREVGR0hJSktMTU5PUFFSU1RVVldYWVoiLAp9OwoKLyoqIOWKoOWvhue6p+WuieWFqOmaj+acuuWtl+espuS4su+8iOaLkue7nemHh+agt++8jOa2iOmZpOaooeWBj+W3ru+8iSAqLwpmdW5jdGlvbiBzZWN1cmVSYW5kb21TdHJpbmcobGVuZ3RoLCBhbHBoYWJldCkgewogIGlmIChsZW5ndGggPD0gMCB8fCAhYWxwaGFiZXQubGVuZ3RoKSByZXR1cm4gIiI7CiAgY29uc3QgbiA9IGFscGhhYmV0Lmxlbmd0aDsKICBjb25zdCBtYXggPSAweDEwMDAwMDAwMCAtICgweDEwMDAwMDAwMCAlIG4pOyAvLyDlj6/mjqXlj5fnmoTmnIDlpKflgLzvvIjkuI3lkKvvvIkKICBjb25zdCBvdXQgPSBuZXcgQXJyYXkobGVuZ3RoKTsKICBsZXQgaSA9IDA7CiAgd2hpbGUgKGkgPCBsZW5ndGgpIHsKICAgIGNvbnN0IGJ1ZiA9IGNyeXB0by5yYW5kb21CeXRlcyg0KTsKICAgIGNvbnN0IHYgPSBidWYucmVhZFVJbnQzMkxFKDApOwogICAgaWYgKHYgPCBtYXgpIHsKICAgICAgb3V0W2krK10gPSBhbHBoYWJldFt2ICUgbl07CiAgICB9CiAgfQogIHJldHVybiBvdXQuam9pbigiIik7Cn0KCmZ1bmN0aW9uIHJlc29sdmVDaGFyc2V0KG5hbWUpIHsKICBpZiAoIW5hbWUpIHJldHVybiBDSEFSU0VUUy5iYXNlNjI7CiAgaWYgKENIQVJTRVRTW25hbWVdKSByZXR1cm4gQ0hBUlNFVFNbbmFtZV07CiAgLy8g6Ieq5a6a5LmJ5a2X56ym6ZuG77ya5Y676YeNCiAgcmV0dXJuIFsuLi5uZXcgU2V0KG5hbWUpXS5qb2luKCIiKTsKfQoKZnVuY3Rpb24gcGFyc2VBcGlQYXJhbXModXJsKSB7CiAgY29uc3QgdSA9IG5ldyBVUkwodXJsLCAiaHR0cDovL2xvY2FsaG9zdCIpOwogIGxldCBsZW4gPSBwYXJzZUludCh1LnNlYXJjaFBhcmFtcy5nZXQoImxlbiIpIHx8ICI2NCIsIDEwKTsKICBsZXQgY291bnQgPSBwYXJzZUludCh1LnNlYXJjaFBhcmFtcy5nZXQoImNvdW50IikgfHwgIjEiLCAxMCk7CiAgaWYgKGlzTmFOKGxlbikgfHwgbGVuIDwgMSkgbGVuID0gNjQ7CiAgaWYgKGxlbiA+IE1BWF9MRU4pIGxlbiA9IE1BWF9MRU47CiAgaWYgKGlzTmFOKGNvdW50KSB8fCBjb3VudCA8IDEpIGNvdW50ID0gMTsKICBpZiAoY291bnQgPiBNQVhfQ09VTlQpIGNvdW50ID0gTUFYX0NPVU5UOwogIHJldHVybiB7IGxlbiwgY291bnQsIGNoYXJzZXQ6IHJlc29sdmVDaGFyc2V0KHUuc2VhcmNoUGFyYW1zLmdldCgiY2hhcnNldCIpKSB9Owp9CgpmdW5jdGlvbiBzZW5kSnNvbihyZXMsIHN0YXR1cywgb2JqKSB7CiAgY29uc3QgYm9keSA9IEpTT04uc3RyaW5naWZ5KG9iaik7CiAgcmVzLndyaXRlSGVhZChzdGF0dXMsIHsKICAgICJDb250ZW50LVR5cGUiOiAiYXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOCIsCiAgICAiQ2FjaGUtQ29udHJvbCI6ICJuby1zdG9yZSIsCiAgICAiQ29udGVudC1MZW5ndGgiOiBCdWZmZXIuYnl0ZUxlbmd0aChib2R5KSwKICB9KTsKICByZXMuZW5kKGJvZHkpOwp9Cgpjb25zdCBJTkRFWF9IVE1MID0gZnMucmVhZEZpbGVTeW5jKHBhdGguam9pbihfX2Rpcm5hbWUsICJpbmRleC5odG1sIikpOwoKY29uc3Qgc2VydmVyID0gaHR0cC5jcmVhdGVTZXJ2ZXIoKHJlcSwgcmVzKSA9PiB7CiAgY29uc3QgdXJsID0gcmVxLnVybC5zcGxpdCgiPyIpWzBdOwoKICBpZiAodXJsID09PSAiL2FwaS9yYW5kb20iKSB7CiAgICB0cnkgewogICAgICBjb25zdCB7IGxlbiwgY291bnQsIGNoYXJzZXQgfSA9IHBhcnNlQXBpUGFyYW1zKHJlcS51cmwpOwogICAgICBjb25zdCBzdHJpbmdzID0gW107CiAgICAgIGZvciAobGV0IGkgPSAwOyBpIDwgY291bnQ7IGkrKykgc3RyaW5ncy5wdXNoKHNlY3VyZVJhbmRvbVN0cmluZyhsZW4sIGNoYXJzZXQpKTsKICAgICAgc2VuZEpzb24ocmVzLCAyMDAsIHsKICAgICAgICBvazogdHJ1ZSwKICAgICAgICBsZW5ndGg6IGxlbiwKICAgICAgICBjb3VudCwKICAgICAgICBjaGFyc2V0U2l6ZTogY2hhcnNldC5sZW5ndGgsCiAgICAgICAgc3RyaW5ncywKICAgICAgICBnZW5lcmF0ZWRBdDogbmV3IERhdGUoKS50b0lTT1N0cmluZygpLAogICAgICB9KTsKICAgIH0gY2F0Y2ggKGVycikgewogICAgICBzZW5kSnNvbihyZXMsIDUwMCwgeyBvazogZmFsc2UsIGVycm9yOiBTdHJpbmcoZXJyICYmIGVyci5tZXNzYWdlIHx8IGVycikgfSk7CiAgICB9CiAgICByZXR1cm47CiAgfQoKICBpZiAodXJsID09PSAiL2FwaS9oZWFsdGgiIHx8IHVybCA9PT0gIi9oZWFsdGh6IikgewogICAgc2VuZEpzb24ocmVzLCAyMDAsIHsgb2s6IHRydWUsIHNlcnZpY2U6ICJyYW5kb20tc3RyaW5nLWdlbiIgfSk7CiAgICByZXR1cm47CiAgfQoKICBpZiAodXJsID09PSAiLyIgfHwgdXJsID09PSAiL2luZGV4Lmh0bWwiKSB7CiAgICByZXMud3JpdGVIZWFkKDIwMCwgewogICAgICAiQ29udGVudC1UeXBlIjogInRleHQvaHRtbDsgY2hhcnNldD11dGYtOCIsCiAgICAgICJDb250ZW50LUxlbmd0aCI6IElOREVYX0hUTUwubGVuZ3RoLAogICAgfSk7CiAgICByZXMuZW5kKElOREVYX0hUTUwpOwogICAgcmV0dXJuOwogIH0KCiAgcmVzLndyaXRlSGVhZCg0MDQsIHsgIkNvbnRlbnQtVHlwZSI6ICJ0ZXh0L3BsYWluOyBjaGFyc2V0PXV0Zi04IiB9KTsKICByZXMuZW5kKCI0MDQgTm90IEZvdW5kIik7Cn0pOwoKc2VydmVyLmxpc3RlbihQT1JULCAoKSA9PiB7CiAgY29uc29sZS5sb2coYOKclCDpmo/mnLrplb/lrZfnrKbkuLLnlJ/miJDlmajlt7LlkK/liqg6IGh0dHA6Ly9sb2NhbGhvc3Q6JHtQT1JUfWApOwogIGNvbnNvbGUubG9nKGAgICBBUEkg56S65L6LOiBodHRwOi8vbG9jYWxob3N0OiR7UE9SVH0vYXBpL3JhbmRvbT9sZW49NjQmY2hhcnNldD1iYXNlNjImY291bnQ9M2ApOwp9KTsK
+/**
+ * 随机长字符串生成器 —— 零依赖 Node.js HTTP 服务
+ *
+ * 提供：
+ *   GET /                  -> 前端页面 (index.html)
+ *   GET /api/random        -> JSON 接口
+ *        ?len=64           字符串长度（默认 64，上限 1,000,000）
+ *        &charset=base62   字符集：hex | base62 | base64 | alnum | 自定义字符串
+ *        &count=1          生成条数（默认 1，上限 100）
+ *
+ * 运行：node server.js   （默认端口 3000，可用环境变量 PORT 覆盖）
+ */
+
+"use strict";
+
+const http = require("http");
+const fs = require("fs");
+const path = require("path");
+const crypto = require("crypto");
+
+const PORT = parseInt(process.env.PORT || "3000", 10);
+const MAX_LEN = 1_000_000;
+const MAX_COUNT = 100;
+
+const CHARSETS = {
+  hex:    "0123456789abcdef",
+  base62: "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+  base64: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/",
+  alnum:  "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ",
+};
+
+/** 加密级安全随机字符串（拒绝采样，消除模偏差） */
+function secureRandomString(length, alphabet) {
+  if (length <= 0 || !alphabet.length) return "";
+  const n = alphabet.length;
+  const max = 0x100000000 - (0x100000000 % n); // 可接受的最大值（不含）
+  const out = new Array(length);
+  let i = 0;
+  while (i < length) {
+    const buf = crypto.randomBytes(4);
+    const v = buf.readUInt32LE(0);
+    if (v < max) {
+      out[i++] = alphabet[v % n];
+    }
+  }
+  return out.join("");
+}
+
+function resolveCharset(name) {
+  if (!name) return CHARSETS.base62;
+  if (CHARSETS[name]) return CHARSETS[name];
+  // 自定义字符集：去重
+  return [...new Set(name)].join("");
+}
+
+function parseApiParams(url) {
+  const u = new URL(url, "http://localhost");
+  let len = parseInt(u.searchParams.get("len") || "64", 10);
+  let count = parseInt(u.searchParams.get("count") || "1", 10);
+  if (isNaN(len) || len < 1) len = 64;
+  if (len > MAX_LEN) len = MAX_LEN;
+  if (isNaN(count) || count < 1) count = 1;
+  if (count > MAX_COUNT) count = MAX_COUNT;
+  return { len, count, charset: resolveCharset(u.searchParams.get("charset")) };
+}
+
+function sendJson(res, status, obj) {
+  const body = JSON.stringify(obj);
+  res.writeHead(status, {
+    "Content-Type": "application/json; charset=utf-8",
+    "Cache-Control": "no-store",
+    "Content-Length": Buffer.byteLength(body),
+  });
+  res.end(body);
+}
+
+const INDEX_HTML = fs.readFileSync(path.join(__dirname, "index.html"));
+
+const server = http.createServer((req, res) => {
+  const url = req.url.split("?")[0];
+
+  if (url === "/api/random") {
+    try {
+      const { len, count, charset } = parseApiParams(req.url);
+      const strings = [];
+      for (let i = 0; i < count; i++) strings.push(secureRandomString(len, charset));
+      sendJson(res, 200, {
+        ok: true,
+        length: len,
+        count,
+        charsetSize: charset.length,
+        strings,
+        generatedAt: new Date().toISOString(),
+      });
+    } catch (err) {
+      sendJson(res, 500, { ok: false, error: String(err && err.message || err) });
+    }
+    return;
+  }
+
+  if (url === "/api/health" || url === "/healthz") {
+    sendJson(res, 200, { ok: true, service: "random-string-gen" });
+    return;
+  }
+
+  if (url === "/" || url === "/index.html") {
+    res.writeHead(200, {
+      "Content-Type": "text/html; charset=utf-8",
+      "Content-Length": INDEX_HTML.length,
+    });
+    res.end(INDEX_HTML);
+    return;
+  }
+
+  res.writeHead(404, { "Content-Type": "text/plain; charset=utf-8" });
+  res.end("404 Not Found");
+});
+
+server.listen(PORT, () => {
+  console.log(`✔ 随机长字符串生成器已启动: http://localhost:${PORT}`);
+  console.log(`   API 示例: http://localhost:${PORT}/api/random?len=64&charset=base62&count=3`);
+});
