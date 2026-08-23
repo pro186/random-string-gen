@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>随机长字符串生成器</title>
+<style>
+  :root {
+    --bg: #0f172a;
+    --panel: #1e293b;
+    --border: #334155;
+    --text: #e2e8f0;
+    --muted: #94a3b8;
+    --accent: #38bdf8;
+    --accent2: #818cf8;
+    --ok: #34d399;
+    --danger: #f87171;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 16px 60px;
+  }
+  h1 {
+    font-size: 1.6rem;
+    margin: 12px 0 4px;
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .subtitle { color: var(--muted); font-size: .9rem; margin-bottom: 24px; }
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+    width: 100%;
+    max-width: 720px;
+    margin-bottom: 16px;
+    box-shadow: 0 8px 24px rgba(0,0,0,.35);
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+  }
+  .row label {
+    font-size: .9rem;
+    color: var(--muted);
+    min-width: 88px;
+  }
+  input[type=number], input[type=text], select {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    color: var(--text);
+    border-radius: 8px;
+    padding: 8px 10px;
+    font-size: .95rem;
+    outline: none;
+    transition: border-color .15s;
+  }
+  input[type=number]:focus, input[type=text]:focus, select:focus { border-color: var(--accent); }
+  input[type=number] { width: 110px; }
+  .charset-box { flex: 1; min-width: 260px; }
+  .toggle-group { display: flex; flex-wrap: wrap; gap: 8px; }
+  .toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 6px 12px;
+    font-size: .85rem;
+    cursor: pointer;
+    user-select: none;
+    transition: all .15s;
+  }
+  .toggle.active { border-color: var(--accent); color: var(--accent); }
+  .toggle input { display: none; }
+  .buttons { display: flex; gap: 10px; flex-wrap: wrap; }
+  button {
+    border: none;
+    border-radius: 8px;
+    padding: 10px 18px;
+    font-size: .95rem;
+    cursor: pointer;
+    transition: filter .15s, transform .05s;
+    font-weight: 600;
+  }
+  button:active { transform: translateY(1px); }
+  button.primary {
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+    color: #0b1220;
+  }
+  button.secondary { background: var(--border); color: var(--text); }
+  button:hover { filter: brightness(1.15); }
+  .result-area {
+    display: flex;
+    gap: 10px;
+    align-items: stretch;
+    margin-bottom: 8px;
+  }
+  #output {
+    flex: 1;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px;
+    font-family: "Cascadia Mono", Consolas, "Courier New", monospace;
+    font-size: .95rem;
+    line-height: 1.5;
+    word-break: break-all;
+    white-space: pre-wrap;
+    min-height: 96px;
+    max-height: 320px;
+    overflow-y: auto;
+    color: var(--ok);
+    resize: vertical;
+  }
+  .hint { color: var(--muted); font-size: .8rem; margin-bottom: 10px; }
+  .stats { color: var(--muted); font-size: .8rem; }
+  #toast {
+    position: fixed;
+    left: 50%;
+    bottom: 32px;
+    transform: translateX(-50%) translateY(20px);
+    background: #065f46;
+    color: #d1fae5;
+    border: 1px solid #10b981;
+    padding: 10px 18px;
+    border-radius: 8px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .25s;
+    z-index: 99;
+  }
+  #toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+  .history {
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  .history-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 8px;
+    border-radius: 6px;
+    font-family: Consolas, monospace;
+    font-size: .8rem;
+    color: var(--muted);
+    cursor: pointer;
+  }
+  .history-item:hover { background: var(--bg); color: var(--text); }
+  .history-item .idx { color: var(--accent2); flex-shrink: 0; width: 28px; }
+  .history-item .txt {
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .empty { color: var(--muted); font-size: .85rem; text-align: center; padding: 12px; }
+  footer { color: var(--muted); font-size: .75rem; margin-top: 8px; }
+  .api-note { color: var(--muted); font-size: .75rem; margin-top: 10px; }
+  .api-note code {
+    background: var(--bg);
+    padding: 2px 6px;
+    border-radius: 4px;
+    border: 1px solid var(--border);
+  }
+</style>
+</head>
+<body>
+
+<h1>🔑 随机长字符串生成器</h1>
+<div class="subtitle">基于浏览器 Crypto API 的加密级安全随机数，支持超长字符串与批量生成</div>
+
+<div class="card">
+  <div class="row">
+    <label for="length">长度</label>
+    <input type="number" id="length" value="64" min="1" max="1000000">
+    <span class="stats">1 ~ 1,000,000 字符</span>
+  </div>
+
+  <div class="row">
+    <label>字符集</label>
+    <div class="toggle-group" id="charsetToggles">
+      <label class="toggle active"><input type="checkbox" value="lower" checked> abc…z</label>
+      <label class="toggle active"><input type="checkbox" value="upper" checked> ABC…Z</label>
+      <label class="toggle active"><input type="checkbox" value="digit" checked> 0–9</label>
+      <label class="toggle"><input type="checkbox" value="special"> !@#$%…</label>
+    </div>
+  </div>
+
+  <div class="row">
+    <label for="customCharset">自定义字符</label>
+    <input type="text" id="customCharset" class="charset-box" placeholder="可选，填入自定义字符将追加到字符集中，如：-_=+">
+  </div>
+
+  <div class="row">
+    <label for="count">数量</label>
+    <input type="number" id="count" value="1" min="1" max="100">
+    <span class="stats">最多一次生成 100 条，逐行显示</span>
+  </div>
+
+  <div class="buttons">
+    <button class="primary" id="generateBtn">⚡ 生成</button>
+    <button class="secondary" id="copyBtn">📋 复制全部</button>
+    <button class="secondary" id="clearBtn">🗑 清空</button>
+  </div>
+
+  <div class="hint" style="margin-top:16px">生成结果</div>
+  <div class="result-area">
+    <textarea id="output" readonly spellcheck="false" placeholder="点击「生成」后结果会显示在这里"></textarea>
+  </div>
+  <div class="stats" id="stats"></div>
+</div>
+
+<div class="card">
+  <div class="row"><label>历史记录</label><span class="stats">点击条目可复制（最多保存 20 条）</span></div>
+  <div class="history" id="history"></div>
+</div>
+
+<div class="card api-note">
+  💡 也支持直接调用接口：<code>GET /api/random?len=64&amp;charset=hex&amp;count=1</code>
+  ，返回 JSON。字符集可用 <code>hex</code>、<code>base62</code>、<code>base64</code> 或自定义字符串。
+</div>
+
+<footer>安全说明：字符串由 <code>window.crypto.getRandomValues</code> 生成（加密级随机），不在服务器上保存任何内容。</footer>
+
+<div id="toast">已复制到剪贴板 ✓</div>
+
+<script>
+"use strict";
+
+const $ = id => document.getElementById(id);
+
+const CHARSETS = {
+  lower:   "abcdefghijklmnopqrstuvwxyz",
+  upper:   "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+  digit:   "0123456789",
+  special: "!@#$%^&*()-_=+[]{};:,.<>?/~",
+};
+
+const history = []; // 最多 20 条
+
+// ---------- 核心生成函数（加密级随机，拒绝采样消除模偏差） ----------
+function secureRandomString2(length, alphabet) {
+  if (length <= 0 || !alphabet) return "";
+  const n = alphabet.length;
+  const max = 0xFFFFFFFF - (0xFFFFFFFF % n); // 可接受的最大值（不含）
+  const out = new Array(length);
+  for (let i = 0; i < length; i++) {
+    let v;
+    do {
+      v = crypto.getRandomValues(new Uint32Array(1))[0];
+    } while (v >= max);
+    out[i] = alphabet[v % n];
+  }
+  return out.join("");
+}
+
+// ---------- 字符集组装 ----------
+function buildAlphabet() {
+  let chars = "";
+  document.querySelectorAll("#charsetToggles .toggle input:checked").forEach(cb => {
+    chars += CHARSETS[cb.value] || "";
+  });
+  const custom = $("customCharset").value.trim();
+  if (custom) chars += custom;
+  // 去重并保持顺序
+  return [...new Set(chars)].join("");
+}
+
+function validLength() {
+  const v = parseInt($("length").value, 10);
+  if (isNaN(v) || v < 1) { toast("长度必须 ≥ 1"); return null; }
+  return Math.min(v, 1000000);
+}
+
+function validCount() {
+  const v = parseInt($("count").value, 10);
+  if (isNaN(v) || v < 1) { toast("数量必须 ≥ 1"); return null; }
+  return Math.min(v, 100);
+}
+
+// ---------- 生成 ----------
+function generate() {
+  const len = validLength();
+  const cnt = validCount();
+  if (len === null || cnt === null) return;
+  const alphabet = buildAlphabet();
+  if (!alphabet) { toast("请至少选择一个字符集"); return; }
+
+  const lines = [];
+  for (let i = 0; i < cnt; i++) {
+    lines.push(secureRandomString2(len, alphabet));
+  }
+  $("output").value = lines.join("\n");
+  $("stats").textContent = `已生成 ${cnt} 条 × ${len} 字符（字符集 ${alphabet.length} 个字符，加密级随机）`;
+
+  // 记入历史（只记第一条，避免刷屏）
+  if (lines[0]) {
+    history.unshift({ text: lines[0], meta: `${len} 字符 · ${alphabet.length} 字符集` });
+    if (history.length > 20) history.pop();
+    renderHistory();
+  }
+}
+
+// ---------- 剪贴板 ----------
+function copyOutput() {
+  const text = $("output").value;
+  if (!text) { toast("没有可复制的内容"); return; }
+  copyText(text);
+}
+
+function copyText(text) {
+  const done = () => toast("已复制到剪贴板 ✓");
+  if (navigator.clipboard && window.isSecureContext) {
+    navigator.clipboard.writeText(text).then(done, () => fallbackCopy(text));
+  } else {
+    fallbackCopy(text);
+  }
+}
+
+function fallbackCopy(text) {
+  const ta = document.createElement("textarea");
+  ta.value = text;
+  ta.style.position = "fixed";
+  ta.style.opacity = "0";
+  document.body.appendChild(ta);
+  ta.select();
+  try { document.execCommand("copy"); toast("已复制到剪贴板 ✓"); }
+  catch (e) { toast("复制失败，请手动选择复制"); }
+  document.body.removeChild(ta);
+}
+
+// ---------- 历史 ----------
+function renderHistory() {
+  const box = $("history");
+  if (!history.length) {
+    box.innerHTML = '<div class="empty">暂无记录</div>';
+    return;
+  }
+  box.innerHTML = "";
+  history.forEach((item, i) => {
+    const div = document.createElement("div");
+    div.className = "history-item";
+    div.innerHTML = `<span class="idx">#${i + 1}</span><span class="txt"></span><span class="stats">${item.meta}</span>`;
+    div.querySelector(".txt").textContent = item.text;
+    div.title = "点击复制这条";
+    div.addEventListener("click", () => copyText(item.text));
+    box.appendChild(div);
+  });
+}
+
+// ---------- 界面 ----------
+function toast(msg) {
+  const t = $("toast");
+  t.textContent = msg;
+  t.classList.add("show");
+  clearTimeout(toast._timer);
+  toast._timer = setTimeout(() => t.classList.remove("show"), 1800);
+}
+
+document.querySelectorAll(".toggle").forEach(t => {
+  t.addEventListener("click", () => t.classList.toggle("active"));
+});
+
+$("generateBtn").addEventListener("click", generate);
+$("copyBtn").addEventListener("click", copyOutput);
+$("clearBtn").addEventListener("click", () => { $("output").value = ""; $("stats").textContent = ""; });
+$("length").addEventListener("keydown", e => { if (e.key === "Enter") generate(); });
+$("customCharset").addEventListener("keydown", e => { if (e.key === "Enter") generate(); });
+
+// 默认生成一次，打开页面即可看到效果
+generate();
+</script>
+</body>
+</html>
