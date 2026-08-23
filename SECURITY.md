@@ -1,1 +1,52 @@
-IyDlronlhajmlL/nrZYgKFNlY3VyaXR5IFBvbGljeSkKCiMjIOaUr+aMgeeahOeJiOacrCAoU3VwcG9ydGVkIFZlcnNpb25zKQoK5pys6aG555uu5piv5Liq5Lq657u05oqk55qE5byA5rqQ5bCP5bel5YW377yM5LuF57u05oqk5pyA5paw54mI5pys77yIYG1haW5gIOWIhuaUr++8ieOAguayoeacieeLrOeri+eahCBMVFMg54mI5pys57q/44CCCgp8IOeJiOacrCB8IOaUr+aMgeeKtuaAgSB8CnwtLS18LS0tfAp8IG1haW4gKOacgOaWsCkgfCDinIUg5pSv5oyBIHwKfCDlhbbku5bniYjmnKwgfCDinYwg5LiN5Y+X5pSv5oyBIHwKCiMjIOaKpeWRiua8j+a0niAoUmVwb3J0aW5nIGEgVnVsbmVyYWJpbGl0eSkKCuWmguaenOWPkeeOsOWuieWFqOmXrumimO+8iOWmgumaj+acuuaVsOW8uuW6pue8uumZt+OAgVhTU+OAgei3r+W+hOmBjeWOhuOAgeadg+mZkOmXrumimOetie+8ie+8jCoq6K+35LiN6KaB5Zyo5YWs5byAIElzc3VlIOS4reaKq+mcsioq77yM6K+36YCa6L+H5Lul5LiL5Lu75LiA56eB5a+G5rig6YGT5oql5ZGK77yaCgoxLiAqKkdpdEh1YiBTZWN1cml0eSBBZHZpc29yeSDnp4HmnInmiqXlkYoqKu+8iOaOqOiNkO+8ie+8muWcqOS7k+W6k+mhtemdoueCueWHuyBgU2VjdXJpdHlgIOKGkiBgUmVwb3J0IGEgdnVsbmVyYWJpbGl0eWDvvIzloavlhpnmvI/mtJ7mj4/ov7DjgILor6XmiqXlkYrlj6rmnInku5PlupPnu7TmiqTogIXlj6/op4HjgIIKMi4gKirpgq7ku7YqKu+8mumAmui/hyBHaXRIdWIg5Li76aG15LiK57u05oqk6ICF55qE6YKu566x6IGU57O777yI5aaC5pyJ6YWN572u77yJ44CCCgror7fmj5Dkvpvku6XkuIvkv6Hmga/ku6Xkvr/lv6vpgJ/lrprkvY3vvJoKCi0g5ryP5rSe57G75Z6L5LiO5b2x5ZON6IyD5Zu0Ci0g5aSN546w5q2l6aqk77yI5bC96YeP5pyA5bCP5YyW77yJCi0g5Y+X5b2x5ZON55qE5o6l5Y+jL+mhtemdou+8iGAvYOOAgWAvYXBpL3JhbmRvbWAg562J77yJCi0g5bu66K6u55qE5L+u5aSN5pa55qGI77yI5Y+v6YCJ77yJCgrnu7TmiqTogIXkvJrlnKggKio3IOWkqeWGhSoqIOehruiupOaUtuWIsOaKpeWRiu+8jOW5tuWwveWKm+WcqCAqKjMwIOWkqeWGhSoqIOe7meWHuuS/ruWkjeaIlue8k+ino+aWueahiOOAguS/ruWkjeWujOaIkOWQju+8jOS8muWcqOWPkeW4g+ivtOaYjuS4reiHtOiwouaKpeWRiuiAhe+8iOWmguaKpeWRiuiAheWQjOaEj++8ieOAggoKIyMg5a6J5YWo6K6+6K6h6K+05piOCgojIyMg6ZqP5py65pWw5p2l5rqQCgotICoq5rWP6KeI5Zmo56uvKirvvJpgd2luZG93LmNyeXB0by5nZXRSYW5kb21WYWx1ZXNg77yIV2ViIENyeXB0byBBUEnvvIzmk43kvZzns7vnu5/liqDlr4bnuqfpmo/mnLrmupDvvIkKLSAqKuacjeWKoeerryBBUEkqKu+8mmBjcnlwdG8ucmFuZG9tQnl0ZXNg77yITm9kZS5qcyDliqDlr4bmqKHlnZfvvIkKLSDnlJ/miJDnrpfms5Xph4fnlKgqKuaLkue7nemHh+agt++8iHJlamVjdGlvbiBzYW1wbGluZ++8iSoq5raI6Zmk5Y+W5qih5YGP5beu77yM5L+d6K+B5q+P5Liq5a2X56ym5Lil5qC8562J5qaC546HCgojIyMg6ZqQ56eBCgotIOeUn+aIkOi/h+eoiyoq5a6M5YWo5Zyo5pys5ZywKirlrozmiJDvvJrliY3nq6/nlJ/miJDnmoTlrZfnrKbkuLLkuI3nu4/ov4fku7vkvZXnvZHnu5zor7fmsYLvvJtgL2FwaS9yYW5kb21gIOaOpeWPo+S4jeiusOW9leOAgeS4jeWtmOWCqOS7u+S9leeUn+aIkOWGheWuuQotIOacjeWKoeWZqOS4jeS/neWtmOaXpeW/l+S4reeahOeUn+aIkOaVsOaNru+8jOS7hei/lOWbnue7k+aenAoKIyMjIOmDqOe9suazqOaEj+S6i+mhuQoKLSAqKuWKoeW/heS9v+eUqCBIVFRQUyoq77ya5aaC5p6c6YOo572y5Yiw5YWs572R77yM6K+36YCa6L+H5Y+N5ZCR5Luj55CG77yIQ2FkZHkgLyBOZ2lueCAvIFRyYWVmaWvvvInphY3nva4gVExT77yM6YG/5YWN5a2X56ym5Liy5piO5paH5Lyg6L6T6KKr5Lit6Ze05Lq656qD5Y+WCi0g5a655Zmo5YaF5bey5LulKirpnZ4gcm9vdCDnlKjmiLcqKui/kOihjO+8iOingSBEb2NrZXJmaWxlIOeahCBgVVNFUiBhcHBgIOaMh+S7pO+8iQotIOWmguaXoOmcgOWklumDqOiuv+mXru+8jOivt+eUqOmYsueBq+WimemZkOWItuerr+WPo+S7heWGhee9keiuv+mXru+8jOaIluWwhuWuueWZqOe7keWumuWIsCBgMTI3LjAuMC4xYO+8iGBkb2NrZXIgcnVuIC1wIDEyNy4wLjAuMTozMDAwOjMwMDBg77yJCi0g6ZWc5YOP5LiN5ZCr5Lu75L2VIG5wbSDkvp3otZbkuI7ljIXnrqHnkIblmajvvIzmlLvlh7vpnaLovoPlsI/vvJvkvYbor7flrprmnJ8gYGRvY2tlciBwdWxsYCDmm7TmlrDln7rnoYDplZzlg48gYG5vZGU6MjItYWxwaW5lYCDku6Xojrflj5blronlhajooaXkuIEKCiMjIyDkvb/nlKjlu7rorq7vvIjph43opoHvvIkKCi0g5pys5bel5YW355Sf5oiQ55qE6ZqP5py65a2X56ym5Liy5Y+v55So5LqOKirkuLTml7YgdG9rZW7jgIHmtYvor5XmlbDmja7jgIHkvJror53nm5DlgLwqKuetieWcuuaZrwotIOWvueS6jioq5q2j5byP6LSm5Y+35a+G56CB44CB6ZW/5pyf5a+G6ZKlKirvvIzlu7rorq7kvb/nlKjkuJPkuJrnmoTlr4bnoIHnrqHnkIblmajvvIjlpoIgQml0d2FyZGVu44CBS2VlUGFzc++8ieaIliBgb3BlbnNzbCByYW5kIC1iYXNlNjQgMzJgIOetieacrOWcsOWRveS7pOeUn+aIkO+8jOW5tuWmpeWWhOS/neeuoQotIOacrOW3peWFt+aYryoq5byA5rqQ6L2v5Lu277yM5oyJ4oCc5Y6f5qC34oCd5o+Q5L6bKirvvIzkuI3mnoTmiJDlr7nnlJ/miJDlhoXlrrnlronlhajmgKfnmoTku7vkvZXmi4Xkv53vvIjop4EgTElDRU5TRe+8iQo=
+# 安全政策 (Security Policy)
+
+## 支持的版本 (Supported Versions)
+
+本项目是个人维护的开源小工具，仅维护最新版本（`main` 分支）。没有独立的 LTS 版本线。
+
+| 版本 | 支持状态 |
+|---|---|
+| main (最新) | ✅ 支持 |
+| 其他版本 | ❌ 不受支持 |
+
+## 报告漏洞 (Reporting a Vulnerability)
+
+如果发现安全问题（如随机数强度缺陷、XSS、路径遍历、权限问题等），**请不要在公开 Issue 中披露**，请通过以下任一私密渠道报告：
+
+1. **GitHub Security Advisory 私有报告**（推荐）：在仓库页面点击 `Security` → `Report a vulnerability`，填写漏洞描述。该报告只有仓库维护者可见。
+2. **邮件**：通过 GitHub 主页上维护者的邮箱联系（如有配置）。
+
+请提供以下信息以便快速定位：
+
+- 漏洞类型与影响范围
+- 复现步骤（尽量最小化）
+- 受影响的接口/页面（`/`、`/api/random` 等）
+- 建议的修复方案（可选）
+
+维护者会在 **7 天内** 确认收到报告，并尽力在 **30 天内** 给出修复或缓解方案。修复完成后，会在发布说明中致谢报告者（如报告者同意）。
+
+## 安全设计说明
+
+### 随机数来源
+
+- **浏览器端**：`window.crypto.getRandomValues`（Web Crypto API，操作系统加密级随机源）
+- **服务端 API**：`crypto.randomBytes`（Node.js 加密模块）
+- 生成算法采用**拒绝采样（rejection sampling）**消除取模偏差，保证每个字符严格等概率
+
+### 隐私
+
+- 生成过程**完全在本地**完成：前端生成的字符串不经过任何网络请求；`/api/random` 接口不记录、不存储任何生成内容
+- 服务器不保存日志中的生成数据，仅返回结果
+
+### 部署注意事项
+
+- **务必使用 HTTPS**：如果部署到公网，请通过反向代理（Caddy / Nginx / Traefik）配置 TLS，避免字符串明文传输被中间人窃取
+- 容器内已以**非 root 用户**运行（见 Dockerfile 的 `USER app` 指令）
+- 如无需外部访问，请用防火墙限制端口仅内网访问，或将容器绑定到 `127.0.0.1`（`docker run -p 127.0.0.1:3000:3000`）
+- 镜像不含任何 npm 依赖与包管理器，攻击面较小；但请定期 `docker pull` 更新基础镜像 `node:22-alpine` 以获取安全补丁
+
+### 使用建议（重要）
+
+- 本工具生成的随机字符串可用于**临时 token、测试数据、会话盐值**等场景
+- 对于**正式账号密码、长期密钥**，建议使用专业的密码管理器（如 Bitwarden、KeePass）或 `openssl rand -base64 32` 等本地命令生成，并妥善保管
+- 本工具是**开源软件，按“原样”提供**，不构成对生成内容安全性的任何担保（见 LICENSE）
