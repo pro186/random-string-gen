@@ -1,1 +1,119 @@
-IyDpmo/mnLrplb/lrZfnrKbkuLLnlJ/miJDlmajvvIhEb2NrZXIg5Y+v6YOo572y77yJCgrkuIDkuKrnlJ/miJDliqDlr4bnuqflronlhajpmo/mnLrplb/lrZfnrKbkuLLnmoTnvZHpobXvvIzpmYTluKYgSlNPTiBBUEkg5o6l5Y+j44CCKirpm7YgbnBtIOS+nei1lioq77yM6ZWc5YOP5p6B5bCP77yM5Y+v5LiA6ZSu6YOo572y5YiwIERvY2tlcuOAggoKPiAjIyDimqDvuI8g5a6J5YWo6K2m5ZGKCj4KPiAtICoq5LiN6KaB5Zyo5LiN5Y+X5L+h5Lu755qE572R57ucL+mhtemdouS4iuS9v+eUqCoq77ya5Zyo5YWs572R6YCa6L+HIEhUVFAg5piO5paH6K6/6Zeu5pe277yM55Sf5oiQ55qE5a2X56ym5Liy5Y+v6IO96KKr5Lit6Ze05Lq656qD5Y+W5oiW56+h5pS544CC6K+35Yqh5b+F6YCa6L+HIEhUVFBT77yI5Y+N5ZCR5Luj55CG77yJ6K6/6Zeu44CCCj4gLSAqKuS4jeimgeeUqOWug+eUn+aIkOato+W8j+WvhueggS/plb/mnJ/lr4bpkqUqKu+8mue9kemhteeUn+aIkOeahOWtl+espuS4suS4jemAguWQiOS9nOS4uuato+W8j+i0puWPt+WvhueggeaIlumVv+acn+WKoOWvhuWvhumSpeOAguato+W8j+WHreaNruivt+S9v+eUqOS4k+S4muWvhueggeeuoeeQhuWZqO+8iEJpdHdhcmRlbuOAgUtlZVBhc3Mg562J77yJ5oiW5pys5Zyw5ZG95Luk77yI5aaCIGBvcGVuc3NsIHJhbmQgLWJhc2U2NCAzMmDvvInnlJ/miJDlubblpqXlloTkv53nrqHjgIIKPiAtICoq5pys5bel5YW35piv5byA5rqQ6L2v5Lu277yM5oyJ4oCc5Y6f5qC34oCd5o+Q5L6bKirvvJromb3nhLbpmo/mnLrmlbDmnaXoh6rmk43kvZzns7vnu5/liqDlr4bnuqfpmo/mnLrmupDvvIhXZWIgQ3J5cHRvIC8gYGNyeXB0by5yYW5kb21CeXRlc2DvvInvvIzkvYbkvZzogIXkuI3lr7nnlJ/miJDlhoXlrrnnmoTlronlhajmgKflgZrku7vkvZXmi4Xkv53jgIIKPiAtIOivpue7huivtOaYjuingSBbU0VDVVJJVFkubWRdKFNFQ1VSSVRZLm1kKeOAguWPkeeOsOWuieWFqOa8j+a0nuivt+i1sOengeacieaKpeWRiua4oOmBk++8jCoq5LiN6KaB5Zyo5YWs5byAIElzc3VlIOS4reaKq+mcsioq44CCCgojIyDinKgg5Yqf6IO9CgotIOeUn+aIkOmVv+W6piAqKjEgfiAxLDAwMCwwMDAqKiDlrZfnrKbnmoTpmo/mnLrlrZfnrKbkuLIKLSDlj6/pgInlrZfnrKbpm4bvvJrlsI/lhpnlrZfmr40gLyDlpKflhpnlrZfmr40gLyDmlbDlrZcgLyDnibnmrornrKblj7cgLyDoh6rlrprkuYnlrZfnrKYKLSDkuIDmrKHmibnph4/nlJ/miJDmnIDlpJogMTAwIOadoe+8jOmAkOihjOaYvuekugotIOS4gOmUruWkjeWItuOAgeWOhuWPsuiusOW9le+8iOeCueWHu+adoeebruWkjeWItu+8iQotIOWfuuS6jua1j+iniOWZqCBgY3J5cHRvLmdldFJhbmRvbVZhbHVlc2DvvIjliqDlr4bnuqfpmo/mnLrvvInvvIzmi5Lnu53ph4fmoLfmtojpmaTmqKHlgY/lt64KLSDpmYTluKYgUkVTVCBBUEnvvIzmlrnkvr/ohJrmnKzosIPnlKgKLSDkuI3lnKjmnI3liqHlmajkv53lrZjku7vkvZXnlJ/miJDlhoXlrrnvvIzmnI3liqHnq6/ku4Xmj5DkvpvpnZnmgIHpobXpnaIKCiMjIPCfkLMgRG9ja2VyIOmDqOe9su+8iOaOqOiNkO+8iQoKIyMjIOaWueW8j+S4gO+8mmRvY2tlciBjb21wb3NlCgpgYGBiYXNoCmNkIHJhbmRvbS1zdHJpbmctZ2VuCmRvY2tlciBjb21wb3NlIHVwIC1kIC0tYnVpbGQKYGBgCgojIyMg5pa55byP5LqM77ya55u05o6lIGRvY2tlciBidWlsZAoKYGBgYmFzaApkb2NrZXIgYnVpbGQgLXQgcmFuZG9tLXN0cmluZy1nZW4gLgpkb2NrZXIgcnVuIC1kIC0tbmFtZSByYW5kb20tc3RyaW5nLWdlbiAtcCAzMDAwOjMwMDAgLS1yZXN0YXJ0IHVubGVzcy1zdG9wcGVkIHJhbmRvbS1zdHJpbmctZ2VuCmBgYAoK5ZCv5Yqo5ZCO6K6/6Zeu77yaKipodHRwOi8vbG9jYWxob3N0OjMwMDAqKgoKPiDkv67mlLnlrr/kuLvmnLrnq6/lj6PvvJrmioogYC1wIDMwMDA6MzAwMGAg5oiWIGNvbXBvc2Ug6YeM55qEIGAiMzAwMDozMDAwImAg5bem6L655pS55oiQ5oOz6KaB55qE56uv5Y+j77yM5L6L5aaCIGAiODA4MDozMDAwImDjgIIKCiMjIyDlgZzmraIgLyDliKDpmaQKCmBgYGJhc2gKZG9ja2VyIGNvbXBvc2UgZG93biAgICAgICAgICAjIOWBnOatouW5tuenu+mZpOWuueWZqApkb2NrZXIgcm1pIHJhbmRvbS1zdHJpbmctZ2VuICMg5Yig6Zmk6ZWc5YOPCmBgYAoKIyMg8J+WpSDmnKzmnLrnm7TmjqXov5DooYzvvIjkuI3pnIDopoEgRG9ja2Vy77yJCgrpnIDopoEgTm9kZS5qcyAxOCvvvJoKCmBgYGJhc2gKbm9kZSBzZXJ2ZXIuanMKIyDmiJbnlKjoh6rlrprkuYnnq6/lj6MKUE9SVD04MDgwIG5vZGUgc2VydmVyLmpzCmBgYAoKIyMg8J+ToSBBUEkg5o6l5Y+jCgpgYGAKR0VUIC9hcGkvcmFuZG9tP2xlbj02NCZjaGFyc2V0PWJhc2U2MiZjb3VudD0zCmBgYAoKfCDlj4LmlbAgfCDor7TmmI4gfCDpu5jorqQgfAp8LS0tfC0tLXwtLS18CnwgYGxlbmAgfCDlrZfnrKbkuLLplb/luqbvvIgxIH4gMSwwMDAsMDAw77yJIHwgNjQgfAp8IGBjb3VudGAgfCDnlJ/miJDmnaHmlbDvvIgxIH4gMTAw77yJIHwgMSB8CnwgYGNoYXJzZXRgIHwgYGhleGAgLyBgYmFzZTYyYCAvIGBiYXNlNjRgIC8gYGFsbnVtYO+8jOaIluS7u+aEj+iHquWumuS5ieWtl+espuS4siB8IGJhc2U2MiB8CgrnpLrkvovvvJoKCmBgYGJhc2gKIyA2NCDkvY3ljYHlha3ov5vliLblrZfnrKbkuLIKY3VybCAiaHR0cDovL2xvY2FsaG9zdDozMDAwL2FwaS9yYW5kb20/bGVuPTY0JmNoYXJzZXQ9aGV4IgoKIyDnlJ/miJAgNSDmnaEgMzIg5L2NIGJhc2U2MgpjdXJsICJodHRwOi8vbG9jYWxob3N0OjMwMDAvYXBpL3JhbmRvbT9sZW49MzImY291bnQ9NSIKCiMg6Ieq5a6a5LmJ5a2X56ym6ZuGCmN1cmwgImh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC9hcGkvcmFuZG9tP2xlbj0yMCZjaGFyc2V0PWFiY2RlZmdoaWoxMjM0NTYiCmBgYAoK6L+U5ZueIEpTT07vvJoKCmBgYGpzb24KewogICJvayI6IHRydWUsCiAgImxlbmd0aCI6IDMyLAogICJjb3VudCI6IDUsCiAgImNoYXJzZXRTaXplIjogNjIsCiAgInN0cmluZ3MiOiBbIi4uLiJdLAogICJnZW5lcmF0ZWRBdCI6ICIyMDI2LTAxLTAxVDAwOjAwOjAwLjAwMFoiCn0KYGBgCgrlgaXlurfmo4Dmn6XvvJpgR0VUIC9hcGkvaGVhbHRoYO+8iERvY2tlciDplZzlg4/lhoXnva4gSEVBTFRIQ0hFQ0sg6Ieq5Yqo5L2/55So77yJ44CCCgojIyDwn5OBIOaWh+S7tue7k+aehAoKYGBgCnJhbmRvbS1zdHJpbmctZ2VuLwrilJzilIDilIAgaW5kZXguaHRtbCAgICAgICAgICAjIOWJjeerr+mhtemdou+8iOWQq+eUn+aIkOmAu+i+ke+8iQrilJzilIDilIAgc2VydmVyLmpzICAgICAgICAgICAjIOmbtuS+nei1liBOb2RlIOacjeWKoe+8iOmdmeaAgemhtSArIEFQSe+8iQrilJzilIDilIAgRG9ja2VyZmlsZSAgICAgICAgICAjIG5vZGU6MjItYWxwaW5lIOmVnOWDjwrilJzilIDilIAgZG9ja2VyLWNvbXBvc2UueW1sICAjIGNvbXBvc2Ug5LiA6ZSu6YOo572yCuKUnOKUgOKUgCBMSUNFTlNFICAgICAgICAgICAgICMgTUlUIOiuuOWPr+ivgQrilJzilIDilIAgU0VDVVJJVFkubWQgICAgICAgICAjIOWuieWFqOaUv+etlu+8iOa8j+a0nuaKpeWRiua4oOmBk++8iQrilJTilIDilIAgLmRvY2tlcmlnbm9yZQpgYGAKCiMjIPCflJIg5a6J5YWo6K+05piOCgotIOmaj+acuuaVsOadpea6kO+8mua1j+iniOWZqOerryBgY3J5cHRvLmdldFJhbmRvbVZhbHVlc2DvvIzmnI3liqHnq68gYGNyeXB0by5yYW5kb21CeXRlc2DvvIzlnYfkuLrmk43kvZzns7vnu5/mj5DkvpvnmoTliqDlr4bnuqfpmo/mnLrmupAKLSDph4fnlKgqKuaLkue7nemHh+agtyoq77yIcmVqZWN0aW9uIHNhbXBsaW5n77yJ5raI6Zmk5Y+W5qih5YGP5beu77yM5L+d6K+B5q+P5Liq5a2X56ym562J5qaC546HCi0g5a655Zmo5YaF5Lul6Z2eIHJvb3Qg55So5oi36L+Q6KGMCi0g55Sf5oiQ5YaF5a655LiN5Zyo5pyN5Yqh5Zmo5L+d5a2Y77yM5YmN56uv55Sf5oiQ5LiN57uP6L+H5Lu75L2V572R57uc6K+35rGCCi0gKirpg6jnvbLliLDlhaznvZHor7fliqHlv4Xkvb/nlKggSFRUUFMqKu+8jOmBv+WFjeWtl+espuS4suaYjuaWh+S8oOi+k+iiq+eqg+WPlgotIOa8j+a0nuaKpeWRiuS4juWujOaVtOWuieWFqOaUv+etluingSBbU0VDVVJJVFkubWRdKFNFQ1VSSVRZLm1kKe+8iE1JVCDorrjlj6/op4EgW0xJQ0VOU0VdKExJQ0VOU0Up77yJCg==
+# 随机长字符串生成器（Docker 可部署）
+
+一个生成加密级安全随机长字符串的网页，附带 JSON API 接口。**零 npm 依赖**，镜像极小，可一键部署到 Docker。
+
+> ## ⚠️ 安全警告
+>
+> - **不要在不受信任的网络/页面上使用**：在公网通过 HTTP 明文访问时，生成的字符串可能被中间人窃取或篡改。请务必通过 HTTPS（反向代理）访问。
+> - **不要用它生成正式密码/长期密钥**：网页生成的字符串不适合作为正式账号密码或长期加密密钥。正式凭据请使用专业密码管理器（Bitwarden、KeePass 等）或本地命令（如 `openssl rand -base64 32`）生成并妥善保管。
+> - **本工具是开源软件，按“原样”提供**：虽然随机数来自操作系统加密级随机源（Web Crypto / `crypto.randomBytes`），但作者不对生成内容的安全性做任何担保。
+> - 详细说明见 [SECURITY.md](SECURITY.md)。发现安全漏洞请走私有报告渠道，**不要在公开 Issue 中披露**。
+
+## ✨ 功能
+
+- 生成长度 **1 ~ 1,000,000** 字符的随机字符串
+- 可选字符集：小写字母 / 大写字母 / 数字 / 特殊符号 / 自定义字符
+- 一次批量生成最多 100 条，逐行显示
+- 一键复制、历史记录（点击条目复制）
+- 基于浏览器 `crypto.getRandomValues`（加密级随机），拒绝采样消除模偏差
+- 附带 REST API，方便脚本调用
+- 不在服务器保存任何生成内容，服务端仅提供静态页面
+
+## 🐳 Docker 部署（推荐）
+
+### 方式一：docker compose
+
+```bash
+cd random-string-gen
+docker compose up -d --build
+```
+
+### 方式二：直接 docker build
+
+```bash
+docker build -t random-string-gen .
+docker run -d --name random-string-gen -p 3000:3000 --restart unless-stopped random-string-gen
+```
+
+启动后访问：**http://localhost:3000**
+
+> 修改宿主机端口：把 `-p 3000:3000` 或 compose 里的 `"3000:3000"` 左边改成想要的端口，例如 `"8080:3000"`。
+
+### 停止 / 删除
+
+```bash
+docker compose down          # 停止并移除容器
+docker rmi random-string-gen # 删除镜像
+```
+
+## 🖥 本机直接运行（不需要 Docker）
+
+需要 Node.js 18+：
+
+```bash
+node server.js
+# 或用自定义端口
+PORT=8080 node server.js
+```
+
+## 📡 API 接口
+
+```
+GET /api/random?len=64&charset=base62&count=3
+```
+
+| 参数 | 说明 | 默认 |
+|---|---|---|
+| `len` | 字符串长度（1 ~ 1,000,000） | 64 |
+| `count` | 生成条数（1 ~ 100） | 1 |
+| `charset` | `hex` / `base62` / `base64` / `alnum`，或任意自定义字符串 | base62 |
+
+示例：
+
+```bash
+# 64 位十六进制字符串
+curl "http://localhost:3000/api/random?len=64&charset=hex"
+
+# 生成 5 条 32 位 base62
+curl "http://localhost:3000/api/random?len=32&count=5"
+
+# 自定义字符集
+curl "http://localhost:3000/api/random?len=20&charset=abcdefghij123456"
+```
+
+返回 JSON：
+
+```json
+{
+  "ok": true,
+  "length": 32,
+  "count": 5,
+  "charsetSize": 62,
+  "strings": ["..."],
+  "generatedAt": "2026-01-01T00:00:00.000Z"
+}
+```
+
+健康检查：`GET /api/health`（Docker 镜像内置 HEALTHCHECK 自动使用）。
+
+## 📁 文件结构
+
+```
+random-string-gen/
+├── index.html          # 前端页面（含生成逻辑）
+├── server.js           # 零依赖 Node 服务（静态页 + API）
+├── Dockerfile          # node:22-alpine 镜像
+├── docker-compose.yml  # compose 一键部署
+├── LICENSE             # MIT 许可证
+├── SECURITY.md         # 安全政策（漏洞报告渠道）
+└── .dockerignore
+```
+
+## 🔒 安全说明
+
+- 随机数来源：浏览器端 `crypto.getRandomValues`，服务端 `crypto.randomBytes`，均为操作系统提供的加密级随机源
+- 采用**拒绝采样**（rejection sampling）消除取模偏差，保证每个字符等概率
+- 容器内以非 root 用户运行
+- 生成内容不在服务器保存，前端生成不经过任何网络请求
+- **部署到公网请务必使用 HTTPS**，避免字符串明文传输被窃取
+- 漏洞报告与完整安全政策见 [SECURITY.md](SECURITY.md)（MIT 许可见 [LICENSE](LICENSE)）
