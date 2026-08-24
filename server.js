@@ -1,14 +1,14 @@
 /**
- * 随机长字符串生成器 —— 零依赖 Node.js HTTP 服务
+ * Random Long String Generator — zero-dependency Node.js HTTP service
  *
- * 提供：
- *   GET /                  -> 前端页面 (index.html)
- *   GET /api/random        -> JSON 接口
- *        ?len=64           字符串长度（默认 64，上限 1,000,000）
- *        &charset=base62   字符集：hex | base62 | base64 | alnum | 自定义字符串
- *        &count=1          生成条数（默认 1，上限 100）
+ * Provides:
+ *   GET /                  -> frontend page (index.html)
+ *   GET /api/random        -> JSON API
+ *        ?len=64           string length (default 64, max 1,000,000)
+ *        &charset=base62   charset: hex | base62 | base64 | alnum | custom string
+ *        &count=1          number of strings (default 1, max 100)
  *
- * 运行：node server.js   （默认端口 3000，可用环境变量 PORT 覆盖）
+ * Run: node server.js   (default port 3000, override with the PORT env var)
  */
 
 "use strict";
@@ -29,11 +29,11 @@ const CHARSETS = {
   alnum:  "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ",
 };
 
-/** 加密级安全随机字符串（拒绝采样，消除模偏差） */
+/** Cryptographically secure random string (rejection sampling removes modulo bias) */
 function secureRandomString(length, alphabet) {
   if (length <= 0 || !alphabet.length) return "";
   const n = alphabet.length;
-  const max = 0x100000000 - (0x100000000 % n); // 可接受的最大值（不含）
+  const max = 0x100000000 - (0x100000000 % n); // largest acceptable value (exclusive)
   const out = new Array(length);
   let i = 0;
   while (i < length) {
@@ -49,7 +49,7 @@ function secureRandomString(length, alphabet) {
 function resolveCharset(name) {
   if (!name) return CHARSETS.base62;
   if (CHARSETS[name]) return CHARSETS[name];
-  // 自定义字符集：去重
+  // custom charset: de-duplicate
   return [...new Set(name)].join("");
 }
 
@@ -117,6 +117,6 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(PORT, () => {
-  console.log(`✔ 随机长字符串生成器已启动: http://localhost:${PORT}`);
-  console.log(`   API 示例: http://localhost:${PORT}/api/random?len=64&charset=base62&count=3`);
+  console.log(`✔ Random Long String Generator is running: http://localhost:${PORT}`);
+  console.log(`   API example: http://localhost:${PORT}/api/random?len=64&charset=base62&count=3`);
 });
