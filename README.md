@@ -1,5 +1,7 @@
 # Random Long String Generator (Docker-deployable)
 
+**English** | [中文](README.zh-CN.md)
+
 A web page that generates cryptographically secure random long strings, with a JSON API. **Zero npm dependencies**, tiny image, one-command Docker deployment.
 
 > ## ⚠️ Security Warning
