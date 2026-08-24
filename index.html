@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>随机长字符串生成器</title>
+<title>Random Long String Generator</title>
 <style>
   :root {
     --bg: #0f172a;
@@ -104,6 +104,22 @@
   }
   button.secondary { background: var(--border); color: var(--text); }
   button:hover { filter: brightness(1.15); }
+  .lang-switch {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    z-index: 100;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    color: var(--accent);
+    border-radius: 999px;
+    padding: 6px 16px;
+    font-size: .85rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all .15s;
+  }
+  .lang-switch:hover { border-color: var(--accent); filter: brightness(1.15); }
   .result-area {
     display: flex;
     gap: 10px;
@@ -171,7 +187,7 @@
   .empty { color: var(--muted); font-size: .85rem; text-align: center; padding: 12px; }
   footer { color: var(--muted); font-size: .75rem; margin-top: 8px; }
   .api-note { color: var(--muted); font-size: .75rem; margin-top: 10px; }
-  .api-note code {
+  .api-note code, footer code {
     background: var(--bg);
     padding: 2px 6px;
     border-radius: 4px;
@@ -181,18 +197,20 @@
 </head>
 <body>
 
-<h1>🔑 随机长字符串生成器</h1>
-<div class="subtitle">基于浏览器 Crypto API 的加密级安全随机数，支持超长字符串与批量生成</div>
+<button class="lang-switch" id="langBtn">中文</button>
+
+<h1 data-i18n="appH1">🔑 Random Long String Generator</h1>
+<div class="subtitle" data-i18n="appSubtitle">Cryptographically secure random strings from the browser Crypto API — ultra-long strings &amp; batch generation</div>
 
 <div class="card">
   <div class="row">
-    <label for="length">长度</label>
+    <label for="length" data-i18n="length">Length</label>
     <input type="number" id="length" value="64" min="1" max="1000000">
-    <span class="stats">1 ~ 1,000,000 字符</span>
+    <span class="stats" data-i18n="lengthRange">1 ~ 1,000,000 characters</span>
   </div>
 
   <div class="row">
-    <label>字符集</label>
+    <label data-i18n="charset">Charset</label>
     <div class="toggle-group" id="charsetToggles">
       <label class="toggle active"><input type="checkbox" value="lower" checked> abc…z</label>
       <label class="toggle active"><input type="checkbox" value="upper" checked> ABC…Z</label>
@@ -202,48 +220,139 @@
   </div>
 
   <div class="row">
-    <label for="customCharset">自定义字符</label>
-    <input type="text" id="customCharset" class="charset-box" placeholder="可选，填入自定义字符将追加到字符集中，如：-_=+">
+    <label for="customCharset" data-i18n="customCharset">Custom chars</label>
+    <input type="text" id="customCharset" class="charset-box" data-i18n-ph="customCharsetPh" placeholder="Optional — appended to the charset, e.g. -_=+">
   </div>
 
   <div class="row">
-    <label for="count">数量</label>
+    <label for="count" data-i18n="count">Count</label>
     <input type="number" id="count" value="1" min="1" max="100">
-    <span class="stats">最多一次生成 100 条，逐行显示</span>
+    <span class="stats" data-i18n="countRange">Up to 100 strings at once, one per line</span>
   </div>
 
   <div class="buttons">
-    <button class="primary" id="generateBtn">⚡ 生成</button>
-    <button class="secondary" id="copyBtn">📋 复制全部</button>
-    <button class="secondary" id="clearBtn">🗑 清空</button>
+    <button class="primary" id="generateBtn" data-i18n="generate">⚡ Generate</button>
+    <button class="secondary" id="copyBtn" data-i18n="copyAll">📋 Copy all</button>
+    <button class="secondary" id="clearBtn" data-i18n="clear">🗑 Clear</button>
   </div>
 
-  <div class="hint" style="margin-top:16px">生成结果</div>
+  <div class="hint" style="margin-top:16px" data-i18n="result">Result</div>
   <div class="result-area">
-    <textarea id="output" readonly spellcheck="false" placeholder="点击「生成」后结果会显示在这里"></textarea>
+    <textarea id="output" readonly spellcheck="false" data-i18n-ph="outputPh" placeholder='Click "Generate" to see the result here'></textarea>
   </div>
   <div class="stats" id="stats"></div>
 </div>
 
 <div class="card">
-  <div class="row"><label>历史记录</label><span class="stats">点击条目可复制（最多保存 20 条）</span></div>
+  <div class="row"><label data-i18n="history">History</label><span class="stats" data-i18n="historyHint">Click an entry to copy (up to 20 saved)</span></div>
   <div class="history" id="history"></div>
 </div>
 
-<div class="card api-note">
-  💡 也支持直接调用接口：<code>GET /api/random?len=64&amp;charset=hex&amp;count=1</code>
-  ，返回 JSON。字符集可用 <code>hex</code>、<code>base62</code>、<code>base64</code> 或自定义字符串。
+<div class="card api-note" data-i18n-html="apiNote">
+  💡 Direct API access: <code>GET /api/random?len=64&amp;charset=hex&amp;count=1</code> returns JSON. Charsets: <code>hex</code>, <code>base62</code>, <code>base64</code>, or a custom string.
 </div>
 
-<footer>安全说明：字符串由 <code>window.crypto.getRandomValues</code> 生成（加密级随机），不在服务器上保存任何内容。</footer>
+<footer data-i18n-html="footer">Security: strings are generated with <code>window.crypto.getRandomValues</code> (cryptographically secure). Nothing is saved on the server.</footer>
 
-<div id="toast">已复制到剪贴板 ✓</div>
+<div id="toast">Copied to clipboard ✓</div>
 
 <script>
 "use strict";
 
 const $ = id => document.getElementById(id);
 
+// ---------- i18n ----------
+const I18N = {
+  en: {
+    appH1: "🔑 Random Long String Generator",
+    appSubtitle: "Cryptographically secure random strings from the browser Crypto API — ultra-long strings & batch generation",
+    length: "Length",
+    lengthRange: "1 ~ 1,000,000 characters",
+    charset: "Charset",
+    customCharset: "Custom chars",
+    customCharsetPh: "Optional — appended to the charset, e.g. -_=+",
+    count: "Count",
+    countRange: "Up to 100 strings at once, one per line",
+    generate: "⚡ Generate",
+    copyAll: "📋 Copy all",
+    clear: "🗑 Clear",
+    result: "Result",
+    outputPh: 'Click "Generate" to see the result here',
+    history: "History",
+    historyHint: "Click an entry to copy (up to 20 saved)",
+    apiNote: '💡 Direct API access: <code>GET /api/random?len=64&amp;charset=hex&amp;count=1</code> returns JSON. Charsets: <code>hex</code>, <code>base62</code>, <code>base64</code>, or a custom string.',
+    footer: "Security: strings are generated with <code>window.crypto.getRandomValues</code> (cryptographically secure). Nothing is saved on the server.",
+    copied: "Copied to clipboard ✓",
+    copyFailed: "Copy failed — please select and copy manually",
+    nothingToCopy: "Nothing to copy",
+    emptyHistory: "No records yet",
+    errLength: "Length must be ≥ 1",
+    errCount: "Count must be ≥ 1",
+    errCharset: "Please select at least one charset",
+    statsGenerated: "Generated {count} × {len} chars (charset: {size} chars, cryptographically secure)",
+    historyMeta: "{len} chars · {size} charset",
+    clickToCopy: "Click to copy this entry",
+    langLabel: "中文",
+  },
+  zh: {
+    appH1: "🔑 随机长字符串生成器",
+    appSubtitle: "基于浏览器 Crypto API 的加密级安全随机数，支持超长字符串与批量生成",
+    length: "长度",
+    lengthRange: "1 ~ 1,000,000 字符",
+    charset: "字符集",
+    customCharset: "自定义字符",
+    customCharsetPh: "可选，填入自定义字符将追加到字符集中，如：-_=+",
+    count: "数量",
+    countRange: "最多一次生成 100 条，逐行显示",
+    generate: "⚡ 生成",
+    copyAll: "📋 复制全部",
+    clear: "🗑 清空",
+    result: "生成结果",
+    outputPh: "点击「生成」后结果会显示在这里",
+    history: "历史记录",
+    historyHint: "点击条目可复制（最多保存 20 条）",
+    apiNote: '💡 也支持直接调用接口：<code>GET /api/random?len=64&amp;charset=hex&amp;count=1</code>，返回 JSON。字符集可用 <code>hex</code>、<code>base62</code>、<code>base64</code> 或自定义字符串。',
+    footer: "安全说明：字符串由 <code>window.crypto.getRandomValues</code> 生成（加密级随机），不在服务器上保存任何内容。",
+    copied: "已复制到剪贴板 ✓",
+    copyFailed: "复制失败，请手动选择复制",
+    nothingToCopy: "没有可复制的内容",
+    emptyHistory: "暂无记录",
+    errLength: "长度必须 ≥ 1",
+    errCount: "数量必须 ≥ 1",
+    errCharset: "请至少选择一个字符集",
+    statsGenerated: "已生成 {count} 条 × {len} 字符（字符集 {size} 个字符，加密级随机）",
+    historyMeta: "{len} 字符 · {size} 字符集",
+    clickToCopy: "点击复制这条",
+    langLabel: "EN",
+  },
+};
+
+let lang = localStorage.getItem("rsg_lang") || "en";
+if (!I18N[lang]) lang = "en";
+
+function t(key, vars) {
+  let s = (I18N[lang] && I18N[lang][key]) ?? I18N.en[key] ?? key;
+  if (vars) for (const k in vars) s = s.split("{" + k + "}").join(vars[k]);
+  return s;
+}
+
+function applyLang() {
+  document.documentElement.lang = lang === "en" ? "en" : "zh-CN";
+  document.title = t("appH1").replace(/^🔑\s*/, "");
+  document.querySelectorAll("[data-i18n]").forEach(el => { el.textContent = t(el.dataset.i18n); });
+  document.querySelectorAll("[data-i18n-ph]").forEach(el => { el.placeholder = t(el.dataset.i18nPh); });
+  document.querySelectorAll("[data-i18n-html]").forEach(el => { el.innerHTML = t(el.dataset.i18nHtml); });
+  $("langBtn").textContent = t("langLabel");
+  // 刷新动态文本（统计、历史）
+  const stats = $("stats");
+  if (stats.dataset.gen) {
+    const p = JSON.parse(stats.dataset.gen);
+    stats.textContent = t("statsGenerated", p);
+  }
+  renderHistory();
+}
+
+// ---------- 字符集 ----------
 const CHARSETS = {
   lower:   "abcdefghijklmnopqrstuvwxyz",
   upper:   "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
@@ -251,13 +360,13 @@ const CHARSETS = {
   special: "!@#$%^&*()-_=+[]{};:,.<>?/~",
 };
 
-const history = []; // 最多 20 条
+const history = []; // up to 20 entries
 
-// ---------- 核心生成函数（加密级随机，拒绝采样消除模偏差） ----------
+// ---------- Core generator (cryptographically secure, rejection sampling removes modulo bias) ----------
 function secureRandomString2(length, alphabet) {
   if (length <= 0 || !alphabet) return "";
   const n = alphabet.length;
-  const max = 0xFFFFFFFF - (0xFFFFFFFF % n); // 可接受的最大值（不含）
+  const max = 0xFFFFFFFF - (0xFFFFFFFF % n); // largest acceptable value (exclusive)
   const out = new Array(length);
   for (let i = 0; i < length; i++) {
     let v;
@@ -269,7 +378,7 @@ function secureRandomString2(length, alphabet) {
   return out.join("");
 }
 
-// ---------- 字符集组装 ----------
+// ---------- Charset assembly ----------
 function buildAlphabet() {
   let chars = "";
   document.querySelectorAll("#charsetToggles .toggle input:checked").forEach(cb => {
@@ -277,54 +386,56 @@ function buildAlphabet() {
   });
   const custom = $("customCharset").value.trim();
   if (custom) chars += custom;
-  // 去重并保持顺序
+  // de-duplicate, keep order
   return [...new Set(chars)].join("");
 }
 
 function validLength() {
   const v = parseInt($("length").value, 10);
-  if (isNaN(v) || v < 1) { toast("长度必须 ≥ 1"); return null; }
+  if (isNaN(v) || v < 1) { toast(t("errLength")); return null; }
   return Math.min(v, 1000000);
 }
 
 function validCount() {
   const v = parseInt($("count").value, 10);
-  if (isNaN(v) || v < 1) { toast("数量必须 ≥ 1"); return null; }
+  if (isNaN(v) || v < 1) { toast(t("errCount")); return null; }
   return Math.min(v, 100);
 }
 
-// ---------- 生成 ----------
+// ---------- Generate ----------
 function generate() {
   const len = validLength();
   const cnt = validCount();
   if (len === null || cnt === null) return;
   const alphabet = buildAlphabet();
-  if (!alphabet) { toast("请至少选择一个字符集"); return; }
+  if (!alphabet) { toast(t("errCharset")); return; }
 
   const lines = [];
   for (let i = 0; i < cnt; i++) {
     lines.push(secureRandomString2(len, alphabet));
   }
   $("output").value = lines.join("\n");
-  $("stats").textContent = `已生成 ${cnt} 条 × ${len} 字符（字符集 ${alphabet.length} 个字符，加密级随机）`;
+  const stats = $("stats");
+  stats.dataset.gen = JSON.stringify({ count: cnt, len, size: alphabet.length });
+  stats.textContent = t("statsGenerated", { count: cnt, len, size: alphabet.length });
 
-  // 记入历史（只记第一条，避免刷屏）
+  // history (keep the first line only, to avoid flooding)
   if (lines[0]) {
-    history.unshift({ text: lines[0], meta: `${len} 字符 · ${alphabet.length} 字符集` });
+    history.unshift({ text: lines[0], len, size: alphabet.length });
     if (history.length > 20) history.pop();
     renderHistory();
   }
 }
 
-// ---------- 剪贴板 ----------
+// ---------- Clipboard ----------
 function copyOutput() {
   const text = $("output").value;
-  if (!text) { toast("没有可复制的内容"); return; }
+  if (!text) { toast(t("nothingToCopy")); return; }
   copyText(text);
 }
 
 function copyText(text) {
-  const done = () => toast("已复制到剪贴板 ✓");
+  const done = () => toast(t("copied"));
   if (navigator.clipboard && window.isSecureContext) {
     navigator.clipboard.writeText(text).then(done, () => fallbackCopy(text));
   } else {
@@ -339,50 +450,59 @@ function fallbackCopy(text) {
   ta.style.opacity = "0";
   document.body.appendChild(ta);
   ta.select();
-  try { document.execCommand("copy"); toast("已复制到剪贴板 ✓"); }
-  catch (e) { toast("复制失败，请手动选择复制"); }
+  try { document.execCommand("copy"); toast(t("copied")); }
+  catch (e) { toast(t("copyFailed")); }
   document.body.removeChild(ta);
 }
 
-// ---------- 历史 ----------
+// ---------- History ----------
 function renderHistory() {
   const box = $("history");
   if (!history.length) {
-    box.innerHTML = '<div class="empty">暂无记录</div>';
+    box.innerHTML = '<div class="empty">' + t("emptyHistory") + '</div>';
     return;
   }
   box.innerHTML = "";
   history.forEach((item, i) => {
     const div = document.createElement("div");
     div.className = "history-item";
-    div.innerHTML = `<span class="idx">#${i + 1}</span><span class="txt"></span><span class="stats">${item.meta}</span>`;
+    const meta = t("historyMeta", { len: item.len, size: item.size });
+    div.innerHTML = `<span class="idx">#${i + 1}</span><span class="txt"></span><span class="stats"></span>`;
     div.querySelector(".txt").textContent = item.text;
-    div.title = "点击复制这条";
+    div.querySelector(".stats").textContent = meta;
+    div.title = t("clickToCopy");
     div.addEventListener("click", () => copyText(item.text));
     box.appendChild(div);
   });
 }
 
-// ---------- 界面 ----------
+// ---------- UI ----------
 function toast(msg) {
-  const t = $("toast");
-  t.textContent = msg;
-  t.classList.add("show");
+  const el = $("toast");
+  el.textContent = msg;
+  el.classList.add("show");
   clearTimeout(toast._timer);
-  toast._timer = setTimeout(() => t.classList.remove("show"), 1800);
+  toast._timer = setTimeout(() => el.classList.remove("show"), 1800);
 }
 
-document.querySelectorAll(".toggle").forEach(t => {
-  t.addEventListener("click", () => t.classList.toggle("active"));
+document.querySelectorAll(".toggle").forEach(tgl => {
+  tgl.addEventListener("click", () => tgl.classList.toggle("active"));
 });
 
 $("generateBtn").addEventListener("click", generate);
 $("copyBtn").addEventListener("click", copyOutput);
-$("clearBtn").addEventListener("click", () => { $("output").value = ""; $("stats").textContent = ""; });
+$("clearBtn").addEventListener("click", () => { $("output").value = ""; const s = $("stats"); s.textContent = ""; delete s.dataset.gen; });
 $("length").addEventListener("keydown", e => { if (e.key === "Enter") generate(); });
 $("customCharset").addEventListener("keydown", e => { if (e.key === "Enter") generate(); });
 
-// 默认生成一次，打开页面即可看到效果
+$("langBtn").addEventListener("click", () => {
+  lang = lang === "en" ? "zh" : "en";
+  localStorage.setItem("rsg_lang", lang);
+  applyLang();
+});
+
+// Apply saved language, then generate once so the page shows a result on load
+applyLang();
 generate();
 </script>
 </body>
