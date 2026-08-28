@@ -15,6 +15,12 @@
 
 界面**默认英文**，页面右上角有「中文 / EN」切换按钮，可随时在英文与中文之间切换；选择会保存在浏览器 localStorage 中，下次打开保持上次的语言。
 
+## 💖 赞助支持
+
+如果你觉得这个项目有用，欢迎通过 GitHub Sponsors 赞助支持，你的支持会帮助我持续改进它，非常感谢 ❤️
+
+[![Sponsor](https://img.shields.io/badge/Sponsor-%E2%9D%A4%EF%B8%8F-EA4AAA?logo=githubsponsors&logoColor=white&labelColor=EA4AAA)](https://github.com/sponsors/pro186)
+
 ## ✨ 功能
 
 - 生成长度 **1 ~ 1,000,000** 字符的随机字符串

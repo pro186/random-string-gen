@@ -11,6 +11,12 @@ A web page that generates cryptographically secure random long strings, with a J
 > - **This tool is open source, provided "as is"**: although the randomness comes from the OS cryptographic random source (Web Crypto / `crypto.randomBytes`), the author makes no warranty about the security of generated content.
 > - See [SECURITY.md](SECURITY.md) for details. Report security vulnerabilities through the private channel — **do not disclose them in public issues**.
 
+## 💖 Support this project
+
+If you find this project useful, consider sponsoring me on GitHub Sponsors — it really helps me keep improving it. Thank you! ❤️
+
+[![Sponsor](https://img.shields.io/badge/Sponsor-%E2%9D%A4%EF%B8%8F-EA4AAA?logo=githubsponsors&logoColor=white&labelColor=EA4AAA)](https://github.com/sponsors/pro186)
+
 ## ✨ Features
 
 - Generate random strings from **1 to 1,000,000** characters long
