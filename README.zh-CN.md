@@ -20,6 +20,7 @@
 如果你觉得这个项目有用，欢迎通过 GitHub Sponsors 赞助支持，你的支持会帮助我持续改进它，非常感谢 ❤️
 
 [![Sponsor](https://img.shields.io/badge/Sponsor-%E2%9D%A4%EF%B8%8F-EA4AAA?logo=githubsponsors&logoColor=white&labelColor=EA4AAA)](https://github.com/sponsors/pro186)
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-FFDD00?logo=buymeacoffee&logoColor=black&labelColor=FFDD00)](https://www.buymeacoffee.com/pro186)
 
 ## ✨ 功能
 

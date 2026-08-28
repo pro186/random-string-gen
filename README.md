@@ -16,6 +16,7 @@ A web page that generates cryptographically secure random long strings, with a J
 If you find this project useful, consider sponsoring me on GitHub Sponsors — it really helps me keep improving it. Thank you! ❤️
 
 [![Sponsor](https://img.shields.io/badge/Sponsor-%E2%9D%A4%EF%B8%8F-EA4AAA?logo=githubsponsors&logoColor=white&labelColor=EA4AAA)](https://github.com/sponsors/pro186)
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-FFDD00?logo=buymeacoffee&logoColor=black&labelColor=FFDD00)](https://www.buymeacoffee.com/pro186)
 
 ## ✨ Features
 
